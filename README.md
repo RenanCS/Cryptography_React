@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Apresentação de criptografia com React
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+	🚧  Github Cryptography_React ♻️ Concluído 🚀 🚧
+</h4>
 
-## Available Scripts
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> •
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-problemas-encontrados">Problemas encontrados</a> •
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-In the project directory, you can run:
 
-### `yarn start`
+---
+## 💻 Sobre o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O projeto consiste em apresentar aplicação de criptografia, na comunicação entre backend e frontend utilizando chave pública e privada OU Aes sem chave. Foi utilizado no front (react, typescript, node-forge).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+✅ Arquitetura Limpa <br/>
+✅ React <br/>
+✅ Typescript <br/>
+✅ Axios - Rxjs <br/>
+✅ Node-Forge <br/>
 
-### `yarn test`
+---
+## 🚀 Como executar o projeto
+Após a instalação do projeto, é possível testar os dois tipo de criptografia, entretanto, será necessário seguir estes passos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+##  👷‍♂️ Para ambas criptografias o desenvolvedor deverá utilizar o projeto [Cryptography_Example](https://github.com/RenanCS/Cryptography_Example) como backend;
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1-Para utilizar chave pública e privada, será necessário executar o projeto [Cryptography_Example](https://github.com/RenanCS/Cryptography_Example);<br/>
+1.1-definir o subprojeto **CryptographyCreatePem** como inicial; <br/>
+1.2-Definir o caminho onde será gerado o arquivo PERM;<br/>
+1.3-Copiar as informações dentro dos arquivos **public.perm, private.perm**;<br/>
+1.4-Substituir as informações no arquivo crypt > typecrypt > PubPriKey > (PUBLICKEY, PRIVATEKEY);<br/>
+1.5-Dentro do arquivo service > api > definir para utilizar o **factoryPubPriKey**<br/>
+<br/>
+2-Para utilizar a criptografia AES, será necessário utilizar ajustar o código nos seguintes pontos:<br/>
+2.1-Dentro do arquivo service > api > definir para utilizar o **factoryAes**;<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+## Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+ [.Net core](https://dotnet.microsoft.com/en-us/download/dotnet/5.0).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/), [Visuall Studio](https://visualstudio.microsoft.com/pt-br/downloads/)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ❌Problemas encontrados
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ 
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠 Tecnologias
 
-## Learn More
+- **[React](https://reactjs.org/)**
+- **[Typescript](https://www.typescriptlang.org/)**
+- **[Node-Forge](https://www.npmjs.com/package/node-forge)**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
